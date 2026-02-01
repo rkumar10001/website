@@ -154,30 +154,32 @@ export function Divisions() {
                   />
                 </div>
               ) : (
-                <>
-                  <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
-                    {activeDivision.services
-                      ? "Services"
-                      : activeDivision.strategies
-                        ? "Strategies"
-                        : "Offerings"}
-                  </h4>
-                  <ul className="space-y-2">
-                    {(
-                      activeDivision.services ||
-                      activeDivision.strategies ||
-                      activeDivision.offerings
-                    )?.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-center gap-2 text-sm text-muted-foreground"
-                      >
-                        <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </>
+                (activeDivision.services || activeDivision.strategies || activeDivision.offerings) && (
+                  <>
+                    <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
+                      {activeDivision.services
+                        ? "Services"
+                        : activeDivision.strategies
+                          ? "Strategies"
+                          : "Offerings"}
+                    </h4>
+                    <ul className="space-y-2">
+                      {(
+                        activeDivision.services ||
+                        activeDivision.strategies ||
+                        activeDivision.offerings
+                      )?.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-center gap-2 text-sm text-muted-foreground"
+                        >
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )
               )}
             </div>
           </div>

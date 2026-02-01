@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -21,7 +22,14 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <h3 className="text-xl font-bold">Alpha Capital</h3>
+            <Image
+              src="/images/alpha-capital-logo-new.png"
+              alt="Alpha Capital"
+              width={140}
+              height={60}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
         </div>
 
