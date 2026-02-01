@@ -15,7 +15,7 @@ const divisions = [
     focus:
       "Premium residential assets optimized for Short-Term Rental (STR) and corporate housing markets, alongside selective commercial assets.",
     markets: ["United Kingdom", "United Arab Emirates"],
-    portfolioImage: "/images/real-estate-portfolio.png",
+    portfolioImage: "/images/real-estate-portfolio-new.png",
   },
   {
     id: "venture-studio",
@@ -27,7 +27,7 @@ const divisions = [
     focus:
       "We augment founding teams with fractional C-suite resources, giving startups the financial rigor and strategic thinking of a $10M revenue company, even at $500K ARR.",
     markets: ["USA", "Canada", "UK", "Europe", "Middle East", "Asia"],
-    portfolioImage: "/images/venture-studio-portfolio.png",
+    portfolioImage: "/images/venture-studio-portfolio-new.png",
   },
   {
     id: "quant-trading",
