@@ -23,7 +23,7 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
-              src="/images/alpha-capital-logo-new.png"
+              src="/images/alpha-capital-logo-v2.png"
               alt="Alpha Capital"
               width={240}
               height={100}
