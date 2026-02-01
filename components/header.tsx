@@ -25,9 +25,9 @@ export function Header() {
             <Image
               src="/images/alpha-capital-logo-v2.png"
               alt="Alpha Capital"
-              width={240}
-              height={100}
-              className="h-28 w-auto"
+              width={210}
+              height={90}
+              className="h-24 w-auto"
               priority
             />
           </Link>
