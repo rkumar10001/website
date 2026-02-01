@@ -81,8 +81,8 @@ nextjs-portal,
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
-  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: var(--font-montserrat), 'Inter', 'Inter Fallback', sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -126,6 +126,7 @@ nextjs-portal,
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
